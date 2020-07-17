@@ -1,0 +1,9 @@
+{
+    "compilerOptions": {
+        "baseUrl": "./",
+        "paths": {
+            "@theme/*": [ "./src/theme/*", "./node_modules/@docusaurus/theme-classic/src/theme/*" ]
+        }
+    },
+    "exclude": [ "node_modules", "build" ]
+}
