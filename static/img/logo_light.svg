@@ -4,13 +4,6 @@
   <style>
     path {
       fill: white;
-      animation: flip 5s infinite ease-in-out alternate;
-      transform-origin: 50% 50%;
-    }
-    @keyframes flip {
-      to {
-        transform: rotateX(180deg) scale(1.5);
-      }
     }
   </style>
   <g>

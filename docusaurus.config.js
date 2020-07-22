@@ -1,6 +1,7 @@
+const COPYRIGHT = `Copyright © ${new Date().getFullYear()} Ripple`
 module.exports = {
-  title: 'RIPPLERUN',
-  tagline: 'The tagline of my site',
+  title: 'Ripple',
+  tagline: '',
   url: 'https://ripple-run.github.io',
   baseUrl: '/',
   favicon: 'img/favicon.ico',
@@ -8,94 +9,41 @@ module.exports = {
   projectName: 'ripple-run.github.io',
   themeConfig: {
     navbar: {
-      title: 'RippleRun',
+      title: 'RIPPLE',
+      hideOnScroll: true,
       logo: {
         alt: 'ripple run',
         src: 'img/logo.svg',
         srcDark: 'img/logo_light.svg',
       },
-      links: [
-        {
-          to: 'docs/',
-          activeBasePath: 'docs',
-          label: 'Docs',
-          position: 'left',
-        },
-        {to: 'blog', label: 'Blog', position: 'left'},
-        {
-          href: 'https://github.com/ripple-run/ripple-run.github.io',
-          label: 'GitHub',
-          position: 'right',
-        },
-      ],
     },
     footer: {
-      style: 'dark',
-      links: [
-        {
-          title: 'Docs',
-          items: [
-            {
-              label: 'Style Guide',
-              to: 'docs/',
-            },
-            {
-              label: 'Second Doc',
-              to: 'docs/doc2/',
-            },
-          ],
-        },
-        {
-          title: 'Community',
-          items: [
-            {
-              label: 'Stack Overflow',
-              href: 'https://stackoverflow.com/questions/tagged/docusaurus',
-            },
-            {
-              label: 'Discord',
-              href: 'https://discordapp.com/invite/docusaurus',
-            },
-            {
-              label: 'Twitter',
-              href: 'https://twitter.com/docusaurus',
-            },
-          ],
-        },
-        {
-          title: 'More',
-          items: [
-            {
-              label: 'Blog',
-              to: 'blog',
-            },
-            {
-              label: 'GitHub',
-              href: 'https://github.com/facebook/docusaurus',
-            },
-          ],
-        },
-      ],
-      copyright: `Copyright © ${new Date().getFullYear()} My Project, Inc. Built with Docusaurus.`,
+      copyright: COPYRIGHT,
+    },
+    prism: {
+      theme: require('prism-react-renderer/themes/github'),
+      darkTheme: require('prism-react-renderer/themes/dracula'),
+      defaultLanguage: 'javascript',
     },
   },
   presets: [
     [
       '@docusaurus/preset-classic',
       {
-        docs: {
-          // It is recommended to set document id as docs home page (`docs/` path).
-          homePageId: 'doc1',
-          sidebarPath: require.resolve('./sidebars.js'),
-          // Please change this to your repo.
-          editUrl:
-            'https://github.com/facebook/docusaurus/edit/master/website/',
-        },
         blog: {
+          path: './blog',
+          routeBasePath: '/',
+          feedOptions: {
+            type: 'all',
+            copyright: COPYRIGHT,
+          },
           showReadingTime: true,
-          // Please change this to your repo.
+          postPerPage: 10,
+          include: ['*.md', '*.mdx'],
+          truncateMarker: /<!--\s*(truncate)\s*-->/,
+          showReadingTime: true,
           editUrl:
-            'https://github.com/facebook/docusaurus/edit/master/website/blog/',
+            'https://github.com/ripple-run/ripple-run.github.io/edit/docs/',
         },
         theme: {
           customCss: require.resolve('./src/css/custom.css'),
