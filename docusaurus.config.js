@@ -1,4 +1,7 @@
-const COPYRIGHT = `Copyright © ${new Date().getFullYear()} Ripple`
+const math = require('remark-math');
+const katex = require('rehype-katex');
+
+const COPYRIGHT = `Copyright © ${new Date().getFullYear()} Ripple`;
 module.exports = {
   title: 'Ripple',
   tagline: '',
@@ -7,6 +10,9 @@ module.exports = {
   favicon: 'img/favicon.ico',
   organizationName: 'ripple-run',
   projectName: 'ripple-run.github.io',
+  stylesheets: [
+    'https://cdn.jsdelivr.net/npm/katex@0.11.0/dist/katex.min.css',
+  ],
   themeConfig: {
     navbar: {
       title: 'RIPPLE',
@@ -42,6 +48,8 @@ module.exports = {
           include: ['*.md', '*.mdx'],
           truncateMarker: /<!--\s*(truncate)\s*-->/,
           showReadingTime: true,
+          remarkPlugins: [math],
+          rehypePlugins: [katex],
           editUrl:
             'https://github.com/ripple-run/ripple-run.github.io/edit/docs/',
         },
