@@ -15,6 +15,8 @@
   --ifm-color-primary-lighter: #8795ff;
   --ifm-color-primary-lightest: #bac2ff;
   --ifm-navbar-link-hover-color: #8b9dff;
+  --ifm-navbar-height: 3rem;
+  --ifm-navbar-padding-vertical: 0.25rem;
   --ifm-link-color: #8b9dff;
   --ifm-menu-color-active: #8b9dff;
   --ifm-font-size-base: 16px;
@@ -23,6 +25,8 @@
   --ifm-footer-color: #ccc;
   --ifm-footer-background-color: #f8f8f8;
   --ifm-menu-color-background-active: #ebedf0;
+  --ifm-navbar-background-color: #fdfdfd;
+  --ifm-footer-padding-vertical: 1rem;
 }
 
 html[data-theme='dark'] {
@@ -38,7 +42,7 @@ html[data-theme='dark'] {
   --ifm-link-color: #8b9dff;
   --ifm-menu-color-active: #8b9dff;
   --ifm-background-color: #0a141c;
-  --ifm-footer-color: inherit;
+  --ifm-footer-color: #252729;
   --ifm-footer-background-color: #0a141c;
   --ifm-navbar-background-color: #21243d;
   --ifm-menu-color-background-active: #21243d;
@@ -62,4 +66,8 @@ html[data-theme='dark'] .footer--dark {
 
 .avatar {
   display: none;
+}
+
+.blogPostTitle_node_modules-\@docusaurus-theme-classic-src-theme-BlogPostItem- {
+  font-size: 2.5rem !important;
 }
