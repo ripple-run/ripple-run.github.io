@@ -10,9 +10,7 @@ module.exports = {
   favicon: 'img/favicon.ico',
   organizationName: 'ripple-run',
   projectName: 'ripple-run.github.io',
-  stylesheets: [
-    'https://cdn.jsdelivr.net/npm/katex@0.11.0/dist/katex.min.css',
-  ],
+  stylesheets: ['https://cdn.jsdelivr.net/npm/katex@0.11.0/dist/katex.min.css'],
   themeConfig: {
     navbar: {
       title: 'RIPPLE',
@@ -47,7 +45,6 @@ module.exports = {
           postPerPage: 10,
           include: ['*.md', '*.mdx'],
           truncateMarker: /<!--\s*(truncate)\s*-->/,
-          showReadingTime: true,
           remarkPlugins: [math],
           rehypePlugins: [katex],
           editUrl:
