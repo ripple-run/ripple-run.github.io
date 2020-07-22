@@ -1,17 +1,6 @@
 <?xml version="1.0" standalone="no"?>
 <!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
 <svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 314 314">
-  <style>
-    path {
-      animation: flip 5s infinite ease-in-out alternate;
-      transform-origin: 50% 50%;
-    }
-    @keyframes flip {
-      to {
-        transform: rotateX(180deg) scale(1.5);
-      }
-    }
-  </style>
   <g>
     <path d="M7,138.428c-3.866,0-7,3.134-7,7v23.145c0,3.866,3.134,7,7,7s7-3.134,7-7v-23.145C14,141.561,10.866,138.428,7,138.428z"/>
     <path d="M34.273,138.428c-3.866,0-7,3.134-7,7v23.145c0,3.866,3.134,7,7,7s7-3.134,7-7v-23.145
