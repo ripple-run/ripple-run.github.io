@@ -4,9 +4,16 @@
         <title>Ripple Blog</title>
         <link>https://ripple-run.github.io/</link>
         <description>Ripple Blog</description>
-        <lastBuildDate>Sun, 25 Oct 2015 23:29:00 GMT</lastBuildDate>
+        <lastBuildDate>Wed, 22 Jul 2020 00:00:00 GMT</lastBuildDate>
         <docs>https://validator.w3.org/feed/docs/rss2.html</docs>
         <generator>https://github.com/jpmonette/feed</generator>
         <copyright>Copyright © 2020 Ripple</copyright>
+        <item>
+            <title><![CDATA[光与影]]></title>
+            <link>https://ripple-run.github.io/2020/07/22/lights-and-shadows</link>
+            <guid>光与影</guid>
+            <pubDate>Wed, 22 Jul 2020 00:00:00 GMT</pubDate>
+            <description><![CDATA[光影原理介绍]]></description>
+        </item>
     </channel>
 </rss>

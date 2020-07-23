@@ -2,10 +2,17 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://ripple-run.github.io/</id>
     <title>Ripple Blog</title>
-    <updated>2015-10-25T23:29:00.000Z</updated>
+    <updated>2020-07-22T00:00:00.000Z</updated>
     <generator>https://github.com/jpmonette/feed</generator>
     <link rel="alternate" href="https://ripple-run.github.io/"/>
     <subtitle>Ripple Blog</subtitle>
     <icon>https://ripple-run.github.io/img/favicon.ico</icon>
     <rights>Copyright © 2020 Ripple</rights>
+    <entry>
+        <title type="html"><![CDATA[光与影]]></title>
+        <id>光与影</id>
+        <link href="https://ripple-run.github.io/2020/07/22/lights-and-shadows"/>
+        <updated>2020-07-22T00:00:00.000Z</updated>
+        <summary type="html"><![CDATA[光影原理介绍]]></summary>
+    </entry>
 </feed>
