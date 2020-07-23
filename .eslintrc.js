@@ -14,6 +14,7 @@ module.exports = {
   },
   rules: {
     semi: ['error', 'always'],
+    'react/prop-types': 'off',
   },
   env: {
     browser: true,

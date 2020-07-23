@@ -1,5 +1,6 @@
 const math = require('remark-math');
 const katex = require('rehype-katex');
+const containers = require('remark-containers');
 
 const COPYRIGHT = `Copyright © ${new Date().getFullYear()} Ripple`;
 module.exports = {
@@ -25,7 +26,7 @@ module.exports = {
       copyright: COPYRIGHT,
     },
     prism: {
-      theme: require('prism-react-renderer/themes/github'),
+      theme: require('prism-react-renderer/themes/dracula'),
       darkTheme: require('prism-react-renderer/themes/dracula'),
       defaultLanguage: 'javascript',
     },
@@ -45,10 +46,13 @@ module.exports = {
           postPerPage: 10,
           include: ['*.md', '*.mdx'],
           truncateMarker: /<!--\s*(truncate)\s*-->/,
-          remarkPlugins: [math],
+          remarkPlugins: [containers, math],
           rehypePlugins: [katex],
           editUrl:
             'https://github.com/ripple-run/ripple-run.github.io/edit/docs/',
+          admonitions: {
+            tag: ':::',
+          },
         },
         theme: {
           customCss: require.resolve('./src/css/custom.css'),

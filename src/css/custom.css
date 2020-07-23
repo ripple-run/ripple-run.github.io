@@ -7,6 +7,9 @@
 
 /* You can override the default Infima variables here. */
 :root {
+  --ripple-bg-light: #f8f8f8;
+  --ripple-bg-dark: #1c1f38;
+  --ripple-bg-darker: #0a141c;
   --ifm-color-primary: #5468ff;
   --ifm-color-primary-dark: #324aff;
   --ifm-color-primary-darker: #213bff;
@@ -21,9 +24,9 @@
   --ifm-menu-color-active: #8b9dff;
   --ifm-font-size-base: 16px;
   --ifm-code-font-size: 90%;
-  --ifm-background-color: #f8f8f8;
+  --ifm-background-color: var(--ripple-bg-light);
   --ifm-footer-color: #ccc;
-  --ifm-footer-background-color: #f8f8f8;
+  --ifm-footer-background-color: var(--ripple-bg-light);
   --ifm-menu-color-background-active: #ebedf0;
   --ifm-navbar-background-color: #fdfdfd;
   --ifm-footer-padding-vertical: 1rem;
@@ -37,24 +40,28 @@ html[data-theme='dark'] {
   --ifm-color-primary-light: #7686ff;
   --ifm-color-primary-lighter: #8795ff;
   --ifm-color-primary-lightest: #bac2ff;
-  --ifm-font-base-color: #dee0f2;
+  --ifm-font-color-base: #dee0f2;
   --ifm-navbar-link-hover-color: #8b9dff;
   --ifm-link-color: #8b9dff;
   --ifm-menu-color-active: #8b9dff;
-  --ifm-background-color: #0a141c;
-  --ifm-footer-color: #252729;
-  --ifm-footer-background-color: #0a141c;
+  --ifm-background-color: var(--ripple-bg-dark);
+  --ifm-footer-color: #626580;
+  --ifm-footer-background-color: var(--ripple-bg-dark);
   --ifm-navbar-background-color: #21243d;
   --ifm-menu-color-background-active: #21243d;
 }
 
-html[data-theme='dark'] .react-toggle-track {
-  background-color: var(--ifm-footer-background-color);
+html[data-theme='dark'] .navbar .react-toggle-track {
+  background-color: var(--ripple-bg-darker);
 }
 
 html[data-theme='dark'] .footer--dark {
   --ifm-footer-color: inherit;
   --ifm-footer-background-color: #0a141c;
+}
+
+html, body {
+  overflow-x: hidden;
 }
 
 .docusaurus-highlight-code-line {
@@ -70,4 +77,29 @@ html[data-theme='dark'] .footer--dark {
 
 .blogPostTitle_node_modules-\@docusaurus-theme-classic-src-theme-BlogPostItem- {
   font-size: 2.5rem !important;
+}
+
+.md-break-width {
+  position: relative;
+  padding: 2.5rem 0 1.25rem 0;
+  margin: 1.25rem 0;
+}
+
+.md-break-width:before {
+  content: '';
+  position: absolute;
+  z-index: -1;
+  left: 50%;
+  top: 0;
+  bottom: 0;
+  width: 100vw;
+  transform: translateX(-50%);
+}
+
+.md-break-width-dark {
+  color: #dee0f2;
+}
+
+.md-break-width-dark:before {
+  background-color: var(--ripple-bg-darker);
 }
