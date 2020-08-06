@@ -43,7 +43,7 @@ module.exports = {
             copyright: COPYRIGHT,
           },
           showReadingTime: true,
-          postPerPage: 10,
+          postsPerPage: 10,
           include: ['*.md', '*.mdx'],
           truncateMarker: /<!--\s*(truncate)\s*-->/,
           remarkPlugins: [containers, math],
