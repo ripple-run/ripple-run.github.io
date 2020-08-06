@@ -4,10 +4,17 @@
         <title>Ripple Blog</title>
         <link>https://ripple-run.github.io/</link>
         <description>Ripple Blog</description>
-        <lastBuildDate>Wed, 22 Jul 2020 00:00:00 GMT</lastBuildDate>
+        <lastBuildDate>Wed, 05 Aug 2020 00:00:00 GMT</lastBuildDate>
         <docs>https://validator.w3.org/feed/docs/rss2.html</docs>
         <generator>https://github.com/jpmonette/feed</generator>
         <copyright>Copyright © 2020 Ripple</copyright>
+        <item>
+            <title><![CDATA[五子棋]]></title>
+            <link>https://ripple-run.github.io/2020/08/05/gomoku</link>
+            <guid>五子棋</guid>
+            <pubDate>Wed, 05 Aug 2020 00:00:00 GMT</pubDate>
+            <description><![CDATA[五子棋小 DEMO]]></description>
+        </item>
         <item>
             <title><![CDATA[光与影]]></title>
             <link>https://ripple-run.github.io/2020/07/22/lights-and-shadows</link>

@@ -2,12 +2,19 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://ripple-run.github.io/</id>
     <title>Ripple Blog</title>
-    <updated>2020-07-22T00:00:00.000Z</updated>
+    <updated>2020-08-05T00:00:00.000Z</updated>
     <generator>https://github.com/jpmonette/feed</generator>
     <link rel="alternate" href="https://ripple-run.github.io/"/>
     <subtitle>Ripple Blog</subtitle>
     <icon>https://ripple-run.github.io/img/favicon.ico</icon>
     <rights>Copyright © 2020 Ripple</rights>
+    <entry>
+        <title type="html"><![CDATA[五子棋]]></title>
+        <id>五子棋</id>
+        <link href="https://ripple-run.github.io/2020/08/05/gomoku"/>
+        <updated>2020-08-05T00:00:00.000Z</updated>
+        <summary type="html"><![CDATA[五子棋小 DEMO]]></summary>
+    </entry>
     <entry>
         <title type="html"><![CDATA[光与影]]></title>
         <id>光与影</id>
