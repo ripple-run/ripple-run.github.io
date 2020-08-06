@@ -1,0 +1,21 @@
+.gomoku {
+  position: relative;
+  width: 100%;
+  border-radius: 10px;
+  overflow: hidden;
+}
+.board {
+  display: block;
+  position: absolute;
+  left: 0;
+  top: 0;
+  bottom: 0;
+  width: 100%;
+  z-index: 0;
+}
+.main {
+  position: relative;
+  display: block;
+  width: 100%;
+  z-index: 1;
+}
