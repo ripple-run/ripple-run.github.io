@@ -1,16 +1,18 @@
 import React, { useRef, useEffect } from 'react';
 import styles from './styles.module.css';
-import { Gomoku as G } from './gomoku';
+import { Gomoku as G } from './2d/gomoku';
+import { Gomoku as GL } from './gl/gomoku';
 
-export default function Gomoku(props = {}) {
+export default function Gomoku({ webgl, ...props } = {}) {
   const mainRef = useRef();
   const boardRef = useRef();
   useEffect(() => {
     const boardEl = boardRef.current;
-    if (!isSupportCanvas(boardEl)) {
+    if (!isSupportCanvas(boardEl, webgl)) {
       return;
     }
-    let gomoku = new G({
+    const Ctor = webgl ? GL : G;
+    let gomoku = new Ctor({
       boardEl,
       mainEl: mainRef.current,
       bgColor: '#d3b36a',
@@ -38,6 +40,6 @@ function NotSupport() {
   return <p>your browser not support canvas</p>;
 }
 
-function isSupportCanvas(el) {
-  return el.getContext && el.getContext('2d');
+function isSupportCanvas(el, webgl = false) {
+  return el.getContext && el.getContext(webgl ? 'webgl' : '2d');
 }

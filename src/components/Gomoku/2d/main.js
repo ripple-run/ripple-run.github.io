@@ -1,5 +1,5 @@
-import { throttle } from '../../utils/helpers';
-import log from '../../utils/log';
+import { throttle } from '../../../utils/helpers';
+import log from '../../../utils/log';
 
 export class Main {
   constructor(el, options) {

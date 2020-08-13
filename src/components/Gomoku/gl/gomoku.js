@@ -1,6 +1,5 @@
+import log from '../../../utils/log';
 import { Board } from './board';
-import { Main } from './main';
-import log from '../../utils/log';
 
 export class Gomoku {
   constructor({ boardEl, mainEl, ...options } = {}) {
@@ -24,13 +23,11 @@ export class Gomoku {
   }
 
   run() {
-    log.log('gomoku run');
+    log.log('gomoku gl run', this.boardEl);
     this.board = new Board(this.boardEl, this.options);
-    this.main = new Main(this.mainEl, this.options);
   }
 
   destroy() {
-    log.log('gomoku destroy');
-    this.main && this.main.destroy();
+    log.log('gomoku gl destroy');
   }
 }
